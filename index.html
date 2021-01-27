@@ -1,44 +1,91 @@
+<div id="mainshit" >
 <nav>
- <ul>
-    <li> <a href="Gmail">Gmail</a></li>;
-    <li> <a href="Images">Images</a></li>;
-    <li> <a href="Sign Up">Sign Up</a></li>;
+ <ul id="Navbar">
+    <li> <a id="Gmail" href="Gmail">Gmail</a></li>
+    <li> <a id="Images" href="Images">Images</a></li>
+    <li> <a id= "Sign Up" href="Sign Up">Sign Up</a></li>
  </ul>
 </nav>
-<main>
+<main id="mainshit">
 
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google logo" >;
+    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google logo" >
 
-    <input type = "text" >;
+    <input id="searchbox" type = "text" placeholder="Type something bitch" >
+    <ul id="buttons">
+        <li> <button id="Search" type="Button">Search</button></li>
+        <li> <button id="IFL" type="Button">I'm feeling lucky</button></li>
+    </ul>
 </main>
-<footer>
+<footer id="footer">
     <ul>
-        <li> <a href="Privacy">Privacy</a></li>;
-        <li> <a href="Terms">Terms</a></li>;
-        <li> <a href="Settings">Settings</a></li>;
-        <li> <a href="Advertising">Advertising</a></li>;
-        <li> <a href="Business">Business</a></li>;
-        <li> <a href="How Search Works">How Search Works</a></li>;
+        <li> <a id="Privacy" href="Privacy">Privacy</a></li>
+        <li> <a id="Terms" href="Terms">Terms</a></li>
+        <li> <a id="Settings" href="Settings">Settings</a></li>
+        <li> <a id="Advertising" href="Advertising">Advertising</a></li>
+        <li> <a id="Business" href="Business">Business</a></li>
+        <li> <a id="HSW" href="How Search Works">How Search Works</a></li>
      </ul>
 </footer>
-
+</div>
 <style>
-nav {
+    #mainshit {
+       height: 90vh;
+    }
+#navbar li {
+    display: inline;
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+#Gmail {
+    padding: 3px;
+}
+#Images {
+    padding: 10px;
+}
+#Sign Up {
+    padding: 5px;
+}
+#logo {
+    margin-left: 200px;
+}
+#searchbox {
     position: relative;
-    bottom: 100px;
-    left: 100px;
-    li {
-        float: left;
-    }
+    border-radius: 15px;
+    padding: 5 50 5 50;
+    top: 40px;
+    right: 250px;   
 }
-main {
-    text-align:center;
+#buttons {
+    position: relative;
+    padding-left: 200px;
+    top: 60px;
+    left: 30px;
+    
 }
-footer {
-    text-align: center;
-    li {
-    float: left;
+#buttons li {
+   display: inline;
+}
+#Search {
+    margin-right: 50px;
+}
+#Search:hover {
+    box-shadow: 3px 3px 5px 6px rgba(103, 128, 159, 1);
+    background-color: #d8d8d8;
     }
+#IFL:hover {
+    box-shadow: 3px 3px 5px 6px rgba(103, 128, 159, 1);
+    background-color: #d8d8d8;
+}
+#footer li {
+    display: inline;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
 }
 
 </style>
